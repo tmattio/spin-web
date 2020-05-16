@@ -1,0 +1,14 @@
+(library
+ (name views)
+ (public_name {{ project_slug }}-web.views)
+ (libraries tyxml {{ project_slug }})
+ (flags -open StdLabels)
+ (modules (:standard)))
+
+(rule
+ (targets assets.ml)
+ (deps
+  (:data
+   (source_tree ../../../assets)))
+ (action
+  (run %{bin:ocaml-crunch} -m plain ../../../assets -o %{targets})))

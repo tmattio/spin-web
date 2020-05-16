@@ -1,0 +1,5 @@
+(library
+ (name middlewares)
+ (public_name {{ project_slug }}-web.middlewares)
+ (libraries opium_kernel {{ project_slug }})
+ (flags -open StdLabels))

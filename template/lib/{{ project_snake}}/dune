@@ -1,0 +1,6 @@
+(library
+ (name Mirage_demo)
+ (public_name mirage-demo.lib)
+ (libraries lwt lwt.unix logs.fmt))
+
+(include_subdirs unqualified)

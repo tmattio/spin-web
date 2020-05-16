@@ -1,0 +1,5 @@
+(executable
+ (name main)
+ (public_name {{ project_slug }})
+ (libraries opium logs logs.fmt {{ project_slug }}-web)
+ (flags (:standard -open StdLabels)))

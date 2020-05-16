@@ -1,0 +1,5 @@
+(library
+ (name handlers)
+ (public_name {{ project_slug }}-web.handlers)
+ (libraries opium_kernel {{ project_slug }}-web.views {{ project_slug }})
+ (flags -open StdLabels))

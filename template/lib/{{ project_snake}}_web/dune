@@ -1,0 +1,6 @@
+(library
+ (name {{ project_snake }}_web)
+ (public_name {{ project_slug }}-web)
+ (libraries opium_kernel {{ project_slug }}-web.handlers {{ project_slug }}-web.middlewares {{ project_slug }}-web.views
+   {{ project_slug }})
+ (flags -open StdLabels))
