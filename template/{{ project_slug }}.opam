@@ -28,6 +28,7 @@ depends: [
   "caqti"
   "caqti-lwt"
   "caqti-driver-postgresql"
+  "ppx_rapper"
 ]
 build: [
   ["dune" "subst"] {pinned}

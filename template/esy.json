@@ -19,11 +19,12 @@
     "@opam/caqti": "*",
     "@opam/caqti-lwt": "*",
     "@opam/caqti-driver-postgresql": "*",
+    "@opam/ppx_rapper": "*",
     "@opam/dune": ">= 2.0",
     {%- if syntax == 'Reason' %}
     "@opam/reason": "*",
     {%- endif %}
-    "ocaml": ">= 4.6.0"
+    "ocaml": ">= 4.8.0"
   },
   "devDependencies": {
     {% if test_framework == 'Alcotest' -%}

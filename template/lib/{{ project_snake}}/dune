@@ -1,6 +1,9 @@
 (library
- (name Mirage_demo)
- (public_name mirage-demo.lib)
- (libraries lwt lwt.unix logs.fmt))
+ (name {{ project_snake }})
+ (public_name {{ project_slug }})
+ (libraries lwt caqti caqti-driver-postgresql caqti-lwt)
+ (preprocess
+  (pps ppx_rapper))
+ (flags -open StdLabels))
 
 (include_subdirs unqualified)

@@ -33,4 +33,5 @@
   lwt
   caqti
   caqti-lwt
-  caqti-driver-postgresql))
+  caqti-driver-postgresql
+  ppx_rapper))
